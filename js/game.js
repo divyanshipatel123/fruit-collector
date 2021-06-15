@@ -111,16 +111,16 @@ class Game{
                             
                             if (fruitGroup.get(i).isTouching(player)) {
                                 fruitGroup.get(i).destroy();
-                                if(player.index === playerCount){
+                               for (var p in allplayers){
+                                   index = index + 1 
+                                   if(index === player.index){
                                     player.score = player.score + 1;
                                     player.update();
-                                }
+                                   }
+                                
                             }
                             
-                            
-                            
-
-                        }    
+                         }    
                   }
             }
     
